@@ -15,7 +15,7 @@ Dockerized **MYSQL** server that have company database with all its employees li
 ### Do it locally
 
 1. Clone this repo
-2. `build build -t companydb .
+2. `docker build -t companydb .
 3. `docker run -d -p 3306:3306 --name companyDB -e MYSQL_ROOT_PASSWORD=weakpassword companydb` (**docker ps** command to log)
 4. `docker exec -it companyDB bash` (starts bash program) (Error response from daemon: Container **hash code** is not running -> go to docker desktop -> containers -> find companyDB and pres start button -> run previous command again)
 5. `mysql -u root -p` -> then type password `weakpassword`
